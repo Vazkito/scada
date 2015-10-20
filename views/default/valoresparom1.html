@@ -1,0 +1,23 @@
+
+{{left_sidebar_enabled,right_sidebar_enabled=False,('message' in globals())}}
+{{extend 'layout.html'}}
+
+<h1>Valores de la señal Paro M1</h1>
+
+
+<table width="100%">
+<tr>
+    
+    <th>Fecha</th> <th>Valor</th>
+
+</tr>
+
+
+    {{for fila in datos:}}
+    
+    <tr><td width="75%">{{=fila.fecha}}</td><td width="25%">{{=fila.valor}}</td>
+    </tr>
+    {{pass}}
+
+
+</table>

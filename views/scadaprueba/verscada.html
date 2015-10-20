@@ -1,0 +1,13 @@
+{{left_sidebar_enabled,right_sidebar_enabled=False,('message' in globals())}}
+{{extend 'layout.html'}}
+
+
+
+<h2>Formulario de ingreso de datos</h2>
+{{=verscada}}
+<h2>Variables enviadas</h2>
+{{=BEAUTIFY(request.vars)}}
+<h2>Variables aceptadas</h2>
+{{=BEAUTIFY(verscada.vars)}}
+<h2>Errores en el formulario</h2>
+{{=BEAUTIFY(verscada.errors)}}
